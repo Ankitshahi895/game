@@ -121,7 +121,7 @@ class GameServer(BaseHTTPRequestHandler):
 
 
 def run_server():
-    port = int(os.environ.get("PORT", 8000))
+    port = int(os.environ.get("PORT", 10000))  # Default to 10000, but can be overridden by environment variable
     server_address = ('0.0.0.0', port)
     httpd = HTTPServer(server_address, GameServer)
     print(f"Starting server on port {port}...")
