@@ -1,7 +1,7 @@
 // API functions to interact with the Python backend
 
 // Base URL for API requests
-const API_URL = 'http://localhost:8000';
+const API_URL = 'https://game-j6el.onrender.com';
 
 // Load high scores from the server
 export async function loadHighScores() {
